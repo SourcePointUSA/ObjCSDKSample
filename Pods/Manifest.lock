@@ -1,0 +1,20 @@
+PODS:
+  - ConsentViewController (2.2.4):
+    - ReachabilitySwift (= 4.3.0)
+  - ReachabilitySwift (4.3.0)
+
+DEPENDENCIES:
+  - ConsentViewController (= 2.2.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ConsentViewController
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  ConsentViewController: 59f964d9130d94663194267a11218ceca06e177f
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+
+PODFILE CHECKSUM: b0ba2d0422ab756ae8c94ca74e1e7a8d0cf6c47d
+
+COCOAPODS: 1.7.0.beta.3
