@@ -6,5 +6,5 @@ target 'ObjCSDKSample' do
   use_frameworks!
 
   # Pods for ObjCSDKSample
-  pod 'ConsentViewController', '2.2.4'
+  pod 'ConsentViewController'
 end
