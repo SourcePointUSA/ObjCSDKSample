@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8231315022AAA0560099F482 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231314F22AAA0560099F482 /* Reachability.swift */; };
+		8231316022AAA0FF0099F482 /* ConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315322AAA0FF0099F482 /* ConsentViewController.swift */; };
+		8231316122AAA0FF0099F482 /* ConsentViewControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315422AAA0FF0099F482 /* ConsentViewControllerError.swift */; };
+		8231316222AAA0FF0099F482 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315622AAA0FF0099F482 /* Data.swift */; };
+		8231316322AAA0FF0099F482 /* ConsentStringError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315722AAA0FF0099F482 /* ConsentStringError.swift */; };
+		8231316422AAA0FF0099F482 /* ConsentString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315822AAA0FF0099F482 /* ConsentString.swift */; };
+		8231316522AAA0FF0099F482 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315922AAA0FF0099F482 /* String.swift */; };
+		8231316622AAA0FF0099F482 /* ConsentStringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315A22AAA0FF0099F482 /* ConsentStringProtocol.swift */; };
+		8231316722AAA0FF0099F482 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315B22AAA0FF0099F482 /* Utils.swift */; };
+		8231316822AAA0FF0099F482 /* Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315C22AAA0FF0099F482 /* Consent.swift */; };
+		8231316922AAA0FF0099F482 /* SourcePointClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8231315D22AAA0FF0099F482 /* SourcePointClient.swift */; };
+		8231316A22AAA0FF0099F482 /* JSReceiver.js in Resources */ = {isa = PBXBuildFile; fileRef = 8231315F22AAA0FF0099F482 /* JSReceiver.js */; };
 		82A3551D22A948E40097333B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A3551C22A948E40097333B /* AppDelegate.m */; };
 		82A3552022A948E40097333B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A3551F22A948E40097333B /* ViewController.m */; };
 		82A3552322A948E40097333B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A3552122A948E40097333B /* Main.storyboard */; };
@@ -16,6 +28,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8231314E22AAA0550099F482 /* ObjCSDKSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCSDKSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		8231314F22AAA0560099F482 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8231315322AAA0FF0099F482 /* ConsentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentViewController.swift; sourceTree = "<group>"; };
+		8231315422AAA0FF0099F482 /* ConsentViewControllerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentViewControllerError.swift; sourceTree = "<group>"; };
+		8231315622AAA0FF0099F482 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		8231315722AAA0FF0099F482 /* ConsentStringError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStringError.swift; sourceTree = "<group>"; };
+		8231315822AAA0FF0099F482 /* ConsentString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentString.swift; sourceTree = "<group>"; };
+		8231315922AAA0FF0099F482 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8231315A22AAA0FF0099F482 /* ConsentStringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentStringProtocol.swift; sourceTree = "<group>"; };
+		8231315B22AAA0FF0099F482 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8231315C22AAA0FF0099F482 /* Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consent.swift; sourceTree = "<group>"; };
+		8231315D22AAA0FF0099F482 /* SourcePointClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcePointClient.swift; sourceTree = "<group>"; };
+		8231315F22AAA0FF0099F482 /* JSReceiver.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSReceiver.js; sourceTree = "<group>"; };
 		82A3551822A948E40097333B /* ObjCSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A3551B22A948E40097333B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82A3551C22A948E40097333B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,11 +64,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8231315122AAA0FF0099F482 /* ConsentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8231315222AAA0FF0099F482 /* Classes */,
+				8231315E22AAA0FF0099F482 /* Assets */,
+			);
+			path = ConsentViewController;
+			sourceTree = "<group>";
+		};
+		8231315222AAA0FF0099F482 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8231314F22AAA0560099F482 /* Reachability.swift */,
+				8231315322AAA0FF0099F482 /* ConsentViewController.swift */,
+				8231315422AAA0FF0099F482 /* ConsentViewControllerError.swift */,
+				8231315522AAA0FF0099F482 /* ConsentStringSDK */,
+				8231315B22AAA0FF0099F482 /* Utils.swift */,
+				8231315C22AAA0FF0099F482 /* Consent.swift */,
+				8231315D22AAA0FF0099F482 /* SourcePointClient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8231315522AAA0FF0099F482 /* ConsentStringSDK */ = {
+			isa = PBXGroup;
+			children = (
+				8231315622AAA0FF0099F482 /* Data.swift */,
+				8231315722AAA0FF0099F482 /* ConsentStringError.swift */,
+				8231315822AAA0FF0099F482 /* ConsentString.swift */,
+				8231315922AAA0FF0099F482 /* String.swift */,
+				8231315A22AAA0FF0099F482 /* ConsentStringProtocol.swift */,
+			);
+			path = ConsentStringSDK;
+			sourceTree = "<group>";
+		};
+		8231315E22AAA0FF0099F482 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8231315F22AAA0FF0099F482 /* JSReceiver.js */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		82A3550F22A948E40097333B = {
 			isa = PBXGroup;
 			children = (
 				82A3551A22A948E40097333B /* ObjCSDKSample */,
 				82A3551922A948E40097333B /* Products */,
+				8231314E22AAA0550099F482 /* ObjCSDKSample-Bridging-Header.h */,
+				8231315122AAA0FF0099F482 /* ConsentViewController */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +172,7 @@
 				TargetAttributes = {
 					82A3551722A948E40097333B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +201,7 @@
 			files = (
 				82A3552822A948E50097333B /* LaunchScreen.storyboard in Resources */,
 				82A3552522A948E50097333B /* Assets.xcassets in Resources */,
+				8231316A22AAA0FF0099F482 /* JSReceiver.js in Resources */,
 				82A3552322A948E40097333B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +213,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8231316922AAA0FF0099F482 /* SourcePointClient.swift in Sources */,
+				8231316222AAA0FF0099F482 /* Data.swift in Sources */,
+				8231316122AAA0FF0099F482 /* ConsentViewControllerError.swift in Sources */,
+				8231316522AAA0FF0099F482 /* String.swift in Sources */,
 				82A3552022A948E40097333B /* ViewController.m in Sources */,
+				8231316422AAA0FF0099F482 /* ConsentString.swift in Sources */,
 				82A3552B22A948E50097333B /* main.m in Sources */,
+				8231316822AAA0FF0099F482 /* Consent.swift in Sources */,
+				8231316022AAA0FF0099F482 /* ConsentViewController.swift in Sources */,
+				8231316622AAA0FF0099F482 /* ConsentStringProtocol.swift in Sources */,
+				8231315022AAA0560099F482 /* Reachability.swift in Sources */,
+				8231316322AAA0FF0099F482 /* ConsentStringError.swift in Sources */,
 				82A3551D22A948E40097333B /* AppDelegate.m in Sources */,
+				8231316722AAA0FF0099F482 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +368,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KYEQLUC5A;
 				INFOPLIST_FILE = ObjCSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.sourcepoint.ObjCSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCSDKSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +390,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KYEQLUC5A;
 				INFOPLIST_FILE = ObjCSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.sourcepoint.ObjCSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCSDKSample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
