@@ -7,7 +7,7 @@ DEPENDENCIES:
   - ConsentViewController (= 3.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ConsentViewController
     - ReachabilitySwift
 
@@ -17,4 +17,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 06e8a910dcdfae527da80a954d0b759cb3b8ce31
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.8.3
