@@ -6,5 +6,6 @@ target 'ObjCSDKSample' do
   use_frameworks!
 
   # Pods for ObjCSDKSample
-  pod 'ConsentViewController','3.0.0'
+  # TODO: change to the prod SDK when released
+  pod 'CCPAConsentViewController', :path => './../CCPA_iOS_SDK'
 end

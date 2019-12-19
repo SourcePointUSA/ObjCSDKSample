@@ -1,20 +1,16 @@
 PODS:
-  - ConsentViewController (3.0.0):
-    - ReachabilitySwift (= 4.3.0)
-  - ReachabilitySwift (4.3.0)
+  - CCPAConsentViewController (1.0.0)
 
 DEPENDENCIES:
-  - ConsentViewController (= 3.0.0)
+  - CCPAConsentViewController (from `./../CCPA_iOS_SDK`)
 
-SPEC REPOS:
-  trunk:
-    - ConsentViewController
-    - ReachabilitySwift
+EXTERNAL SOURCES:
+  CCPAConsentViewController:
+    :path: "./../CCPA_iOS_SDK"
 
 SPEC CHECKSUMS:
-  ConsentViewController: 044e1ead2849db3aeb86e1d612e22c64cb852e80
-  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  CCPAConsentViewController: 88f6051e4d8a182381525e1884f18b28cdba342d
 
-PODFILE CHECKSUM: 06e8a910dcdfae527da80a954d0b759cb3b8ce31
+PODFILE CHECKSUM: 2d6b91d2c42f7a0f6f3cfabe748bc12e7016bbd2
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4
