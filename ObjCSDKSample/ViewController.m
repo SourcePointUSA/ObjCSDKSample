@@ -19,8 +19,10 @@ CCPAConsentViewController *cvc;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    PropertyName *pn = [[PropertyName alloc] init:@"ccpa.mobile.demo" error: nil];
 
-    cvc = [[CCPAConsentViewController alloc] initWithAccountId:22 propertyId:6099 property:@"ccpa.mobile.demo" PMId:@"5df9105bcf42027ce707bb43" campaign:@"prod" consentDelegate:self];
+    cvc = [[CCPAConsentViewController alloc] initWithAccountId:22 propertyId:6099 propertyName:pn PMId:@"5df9105bcf42027ce707bb43" campaign:@"prod" consentDelegate:self];
                                       
     [cvc loadMessage];
 }
