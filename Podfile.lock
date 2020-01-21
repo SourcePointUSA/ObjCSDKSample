@@ -2,15 +2,15 @@ PODS:
   - CCPAConsentViewController (1.0.0)
 
 DEPENDENCIES:
-  - CCPAConsentViewController (from `./../CCPA_iOS_SDK`)
+  - CCPAConsentViewController (from `../CCPA_iOS_SDK`)
 
 EXTERNAL SOURCES:
   CCPAConsentViewController:
-    :path: "./../CCPA_iOS_SDK"
+    :path: "../CCPA_iOS_SDK"
 
 SPEC CHECKSUMS:
   CCPAConsentViewController: 88f6051e4d8a182381525e1884f18b28cdba342d
 
-PODFILE CHECKSUM: 2adb19c687f82b440147dc6cabfc0ada53434e4c
+PODFILE CHECKSUM: 65276a70165b46c0b466b36301778afed58cc67c
 
 COCOAPODS: 1.8.4

@@ -7,5 +7,5 @@ target 'ObjCSDKSample' do
 
   # Pods for ObjCSDKSample
   # TODO: change to the prod SDK when released
-  pod 'CCPAConsentViewController', '1.0.0'
+  pod 'CCPAConsentViewController', :path => '../CCPA_iOS_SDK'
 end
