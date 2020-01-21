@@ -9,41 +9,45 @@
 #import "ViewController.h"
 @import ConsentViewController;
 
-@interface ViewController ()<ConsentDelegate>
-
+@interface ViewController ()<GDPRConsentDelegate> {
+    GDPRConsentViewController *cvc;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 
-    ConsentViewController *cvc = [[ConsentViewController alloc] initWithAccountId:22 siteId:2372 siteName:@"mobile.demo" PMId:@"5c0e81b7d74b3c30c6852301" campaign:@"stage" showPM:false consentDelegate:self andReturnError:nil];
+    GDPRPropertyName *propertyName = [[GDPRPropertyName alloc] init:@"mobile.demo" error:NULL];
+
+    cvc = [[GDPRConsentViewController alloc]
+           initWithAccountId:22
+           propertyId:2372
+           propertyName:propertyName
+           PMId:@"5c0e81b7d74b3c30c6852301"
+           campaignEnv:GDPRCampaignEnvStage
+           consentDelegate:self];
 
     [cvc loadMessage];
 }
 
-- (void)onConsentReadyWithController:(ConsentViewController * _Nonnull)controller {
-    [controller getCustomVendorConsentsWithCompletionHandler:^(NSArray<VendorConsent *> * vendors, ConsentViewControllerError * error) {
-        if (error != nil) {
-            [self onErrorOccurredWithError:error];
-        }else {
-            for (id vendor in vendors) {
-                NSLog(@"Consented to: %@", vendor);
-            }
-        }
-    }];
-    [controller dismissViewControllerAnimated:false completion:NULL];
+- (void)onConsentReadyWithGdprUUID:(NSString *)gdprUUID userConsent:(GDPRUserConsent *)userConsent {
+    NSLog(@"ConsentUUID: %@", gdprUUID);
+    NSLog(@"ConsentString: %@", userConsent.euconsent.consentString);
+    for (id vendorId in userConsent.acceptedVendors) {
+        NSLog(@"Consented to Vendor(id: %@)", vendorId);
+    }
+    for (id purposeId in userConsent.acceptedCategories) {
+        NSLog(@"Consented to Purpose(id: %@)", purposeId);
+    }
+}
+                                  
+- (void)consentUIWillShow {
+    [self presentViewController:cvc animated:true completion:NULL];
 }
 
-- (void)onErrorOccurredWithError:(ConsentViewControllerError * _Nonnull)error {
-    NSLog(@"Error: %@", error);
-    [self dismissViewControllerAnimated:NO completion:nil];
+- (void)consentUIDidDisappear {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
-
-- (void)onMessageReadyWithController:(ConsentViewController * _Nonnull)controller {
-    [self presentViewController:controller animated:false completion:NULL];
-}
-
 @end

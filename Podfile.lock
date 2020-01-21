@@ -1,20 +1,16 @@
 PODS:
-  - ConsentViewController (3.0.0):
-    - ReachabilitySwift (= 4.3.0)
-  - ReachabilitySwift (4.3.0)
+  - ConsentViewController (4.0.0)
 
 DEPENDENCIES:
-  - ConsentViewController (= 3.0.0)
+  - ConsentViewController (from `../ios-cmp-app`)
 
-SPEC REPOS:
-  trunk:
-    - ConsentViewController
-    - ReachabilitySwift
+EXTERNAL SOURCES:
+  ConsentViewController:
+    :path: "../ios-cmp-app"
 
 SPEC CHECKSUMS:
-  ConsentViewController: 044e1ead2849db3aeb86e1d612e22c64cb852e80
-  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  ConsentViewController: 6d84c95cbeaafc68bd2c05799150b0b77c58627e
 
-PODFILE CHECKSUM: 06e8a910dcdfae527da80a954d0b759cb3b8ce31
+PODFILE CHECKSUM: 0fddc47548b34c62b3b2b5f85e784f2c73175af3
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

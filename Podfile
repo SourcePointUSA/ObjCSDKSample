@@ -6,5 +6,5 @@ target 'ObjCSDKSample' do
   use_frameworks!
 
   # Pods for ObjCSDKSample
-  pod 'ConsentViewController','3.0.0'
+  pod 'ConsentViewController', :path => '../ios-cmp-app'
 end
