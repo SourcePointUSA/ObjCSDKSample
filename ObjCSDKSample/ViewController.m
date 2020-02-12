@@ -26,7 +26,7 @@
            propertyId:2372
            propertyName:propertyName
            PMId:@"5c0e81b7d74b3c30c6852301"
-           campaignEnv:GDPRCampaignEnvStage
+           campaignEnv:GDPRCampaignEnvPublic
            consentDelegate:self];
 
     [cvc loadMessage];

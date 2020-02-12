@@ -1,5 +1,5 @@
 PODS:
-  - ConsentViewController (4.0.0)
+  - ConsentViewController (4.1.1)
 
 DEPENDENCIES:
   - ConsentViewController (from `../ios-cmp-app`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../ios-cmp-app"
 
 SPEC CHECKSUMS:
-  ConsentViewController: 6d84c95cbeaafc68bd2c05799150b0b77c58627e
+  ConsentViewController: 6569c7afef9f1a904bd55bd2f425d80772e5df9c
 
 PODFILE CHECKSUM: 0fddc47548b34c62b3b2b5f85e784f2c73175af3
 
