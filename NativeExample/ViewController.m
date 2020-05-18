@@ -19,15 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    GDPRPropertyName *propertyName = [[GDPRPropertyName alloc] init:@"mobile.demo" error:NULL];
+    GDPRPropertyName *propertyName = [[GDPRPropertyName alloc] init:@"tcfv2.mobile.demo" error:NULL];
 
     cvc = [[GDPRConsentViewController alloc]
-           initWithAccountId:22
-           propertyId:2372
-           propertyName:propertyName
-           PMId:@"5c0e81b7d74b3c30c6852301"
-           campaignEnv:GDPRCampaignEnvPublic
-           consentDelegate:self];
+           initWithAccountId: 22
+           propertyId: 7094
+           propertyName: propertyName
+           PMId: @"100699"
+           campaignEnv: GDPRCampaignEnvPublic
+           consentDelegate: self];
 
     [cvc loadMessage];
 }
