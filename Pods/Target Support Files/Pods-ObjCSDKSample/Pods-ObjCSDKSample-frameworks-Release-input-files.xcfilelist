@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-ObjCSDKSample/Pods-ObjCSDKSample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CCPAConsentViewController/CCPAConsentViewController.framework
 ${BUILT_PRODUCTS_DIR}/ConsentViewController/ConsentViewController.framework

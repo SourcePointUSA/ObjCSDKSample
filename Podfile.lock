@@ -1,16 +1,21 @@
 PODS:
-  - ConsentViewController (5.2.0)
+  - CCPAConsentViewController (1.2.0)
+  - ConsentViewController (5.2.3)
 
 DEPENDENCIES:
+  - CCPAConsentViewController (from `../CCPA_iOS_SDK`)
   - ConsentViewController (from `../ios-cmp-app`)
 
 EXTERNAL SOURCES:
+  CCPAConsentViewController:
+    :path: "../CCPA_iOS_SDK"
   ConsentViewController:
     :path: "../ios-cmp-app"
 
 SPEC CHECKSUMS:
-  ConsentViewController: 0fbfa46ebe7ed76b6f8d92294af26baf46c319bb
+  CCPAConsentViewController: d958510fbcb970a607ad51dbe73fbc8e98e1737a
+  ConsentViewController: 4300f6e62e3a719647f01d94f7e2bd00b2c819f8
 
-PODFILE CHECKSUM: 53073f8756b24ad08d7ec5c5fa664e568ada13c7
+PODFILE CHECKSUM: eea70d5039e572168a8f62f2a7cf6d3de55064f6
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.2

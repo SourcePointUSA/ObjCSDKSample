@@ -7,6 +7,7 @@ target 'ObjCSDKSample' do
 
   # Pods for ObjCSDKSample
   pod 'ConsentViewController', :path => '../ios-cmp-app'
+  pod 'CCPAConsentViewController', :path => '../CCPA_iOS_SDK'
 end
 
 target 'NativeExample' do
@@ -15,4 +16,5 @@ target 'NativeExample' do
 
   # Pods for ObjCSDKSample
   pod 'ConsentViewController', :path => '../ios-cmp-app'
+  pod 'CCPAConsentViewController', :path => '../CCPA_iOS_SDK'
 end
