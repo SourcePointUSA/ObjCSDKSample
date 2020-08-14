@@ -11,6 +11,7 @@
 
 @interface ViewController ()<GDPRConsentDelegate> {
     GDPRConsentViewController *cvc;
+    GDPRNativeMessageViewController *nativeMessageController;
 }
 @end
 
@@ -25,11 +26,44 @@
            initWithAccountId: 22
            propertyId: 7094
            propertyName: propertyName
-           PMId: @"100699"
+           PMId: @"179657"
            campaignEnv: GDPRCampaignEnvPublic
            consentDelegate: self];
 
-    [cvc loadMessage];
+    [cvc loadNativeMessageForAuthId:NULL];
+}
+
+-(void)consentUIWillShowWithMessage:(GDPRMessage *)message {
+    nativeMessageController = [[GDPRNativeMessageViewController alloc] initWithMessageContents:message consentViewController:cvc];
+    nativeMessageController.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self presentViewController:nativeMessageController animated:true completion:NULL];
+}
+
+- (void)gdprPMWillShow {
+    if (nativeMessageController.viewIfLoaded.window != nil) {
+        [nativeMessageController presentViewController:cvc animated:true completion:NULL];
+    } else {
+        [self presentViewController:nativeMessageController animated:true completion:NULL];
+    }
+}
+
+- (void)onAction:(GDPRAction *)action {
+    switch (action.type) {
+        case GDPRActionTypePMCancel:
+        case GDPRActionTypeDismiss:
+            [self dismissConsentUI];
+            break;
+        case GDPRActionTypeShowPrivacyManager:
+            break;
+        default:
+            [cvc reportAction:action];
+            [self dismissViewControllerAnimated:true completion:NULL];
+            break;
+    }
+}
+
+- (void)consentUIDidDisappear {
+    [self dismissViewControllerAnimated:true completion:NULL];
 }
 
 - (void)onConsentReadyWithGdprUUID:(NSString *)gdprUUID userConsent:(GDPRUserConsent *)userConsent {
@@ -42,12 +76,16 @@
         NSLog(@"Consented to Purpose(id: %@)", purposeId);
     }
 }
-                                  
-- (void)consentUIWillShow {
-    [self presentViewController:cvc animated:true completion:NULL];
+
+- (void)onErrorWithError:(GDPRConsentViewControllerError *)error {
+    NSLog(@"%@", error);
 }
 
-- (void)consentUIDidDisappear {
-    [self dismissViewControllerAnimated:true completion:nil];
+- (void)dismissConsentUI {
+    if (nativeMessageController.viewIfLoaded.window != nil) {
+        [nativeMessageController dismissViewControllerAnimated:true completion:NULL];
+    } else {
+        [self dismissViewControllerAnimated:true completion:NULL];
+    }
 }
 @end
